@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}首页{% endblock %}
+{% block page_content %}
+    <form action="/after_query" method="post">
+    查询的学号：<input id="sno" type="text" name="sno" />
+    <input type="submit" value="Submit" />
+	</br>
+	</br>
+	</br>
+	</br>
+    查询的课程编号：<input id="cno" type="text" name="cno" />
+    <input type="submit" value="Submit" />
+	</form>
+{% endblock %}

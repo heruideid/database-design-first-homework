@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}首页{% endblock %}
+{% block page_content %}
+    <form action="/after_update" method="post">
+    修改记录的学生学号：<input id="sno" type="text" name="sno" /></br>
+    修改记录的学生姓名：<input id="sname" type="text" name="sname" /></br>
+    修改记录的学生性别：<input id="sex" type="text" name="sex" /></br>
+    修改记录的学生年龄：<input id="sage" type="text" name="sage" /></br>
+    修改记录的学生院系：<input id="sdept" type="text" name="sdept" /></br>
+    <input type="submit" value="Submit" />
+	</br>
+	</br>
+	</br>
+	</br>
+    修改记录的课程编号：<input id="cno" type="text" name="cno" /></br>
+    修改记录的课程名字：<input id="cname" type="text" name="cname" /></br>
+    修改记录的选课人数：<input id="cpno" type="text" name="cpno" /></br>
+    修改记录的课程学分：<input id="ccredit" type="text" name="ccredit" /></br>
+    <input type="submit" value="Submit" />
+	</form>
+{% endblock %}
